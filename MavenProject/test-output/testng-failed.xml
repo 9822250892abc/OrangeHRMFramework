@@ -8,7 +8,10 @@
           <include name="verifyLoginPageTC"/>
           <include name="init"/>
           <include name="TearDown"/>
+          <include name="ExtendFlush"/>
+          <include name="verifyOrangeHrmLogoTC"/>
           <include name="setUp"/>
+          <include name="loginTest"/>
         </methods>
       </class> <!-- com.vtechsolution01.orangehrm.testcase.LoginTest_001 -->
     </classes>

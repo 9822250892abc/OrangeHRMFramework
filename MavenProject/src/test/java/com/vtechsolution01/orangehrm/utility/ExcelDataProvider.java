@@ -12,13 +12,16 @@ public class ExcelDataProvider {
 
 	static XSSFWorkbook workbook;
 
-	public ExcelDataProvider(String filePath) throws Exception {
+	public ExcelDataProvider(String filePath)  {
 		
-			
-			FileInputStream fins = new FileInputStream(filePath);
-			workbook = new XSSFWorkbook(fins);
 
-		
+		try {
+			FileInputStream fins = new FileInputStream(filePath);
+			workbook = new XSSFWorkbook(fins);			
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
 
 	}
 
@@ -53,4 +56,35 @@ public class ExcelDataProvider {
 	public static int getNumericCellData(int index, int row, int clo) {
 		return (int) workbook.getSheetAt(index).getRow(row).getCell(clo).getNumericCellValue();
 	}
+	
+	public static Object[][] getExcelData(String sheetname)
+	{
+		
+		int row = getRowCount(sheetname);
+		int cols = getColsCount(sheetname);
+		System.out.println(row);
+		System.out.println(cols);
+		
+		Object[][] data = new Object[row][cols];
+		
+		for (int i =0; i<row; i++) {
+			for (int j = 0; j < cols; j++) {
+				
+				data[i][j] =workbook.getSheet(sheetname).getRow(i+1).getCell(j).toString();
+			}
+			
+		}
+		
+		return data;
+	}
+	
+//	public static void main(String[] args) {
+//		 ExcelDataProvider excelData = new ExcelDataProvider("./Data/TestData.xlsx");
+//		 
+//		Object[][] data1 = excelData.getExcelData("Login1");
+//		
+//		System.out.println(data1);
+//	}
+	
+	
 }

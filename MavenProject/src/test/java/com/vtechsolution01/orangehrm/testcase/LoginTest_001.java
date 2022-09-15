@@ -14,7 +14,8 @@ public class LoginTest_001 extends Test_Base {
 	@Test(priority = 1)
 	public void verifyLoginPageTC() {
 		extentTest = extentReports.createTest("verifyLoginPageTC");
-		if (driver.getTitle().equals("ToolsQA")) {
+		//toolqa if (driver.getTitle().equals("ToolsQA"))
+			if (driver.getTitle().equals("OrangeHRM")){
 			
 			Assert.assertTrue(true);
 			//System.out.println("Login Tital Is Displyaed");
@@ -29,19 +30,24 @@ public class LoginTest_001 extends Test_Base {
 	}
 
 	@Test(priority = 2)
-	public void verifyToolsQALogoTC() {
-		extentTest = extentReports.createTest("verifyToolsQALogoTC");
+//	public void verifyToolsQALogoTC() 
+	public void verifyOrangeHrmLogoTC() {
+		//extentTest = extentReports.createTest("verifyToolsQALogoTC");
+		extentTest = extentReports.createTest("verifyOrangeHrmLogoTC");
 
 		lp = new Loginpage(driver);
-		if (lp.verifyToolsQALogo()) {
+		
+		//if (lp.verifyToolsQALogo())
+			if (lp.verifyOrangeHHrmLogo()){
 			Assert.assertTrue(true);
 			// System.out.println("ToolsQA Logo is displayed on login page");
-			extentTest.info("ToolsQA Logo is displayed on login page");
-
+		//	extentTest.info("ToolsQA Logo is displayed on login page");
+			extentTest.info("Orange HRM Logo is displayed on login page");
 		} else {
-			Assert.assertTrue(false);
 			//System.out.println("ToolsQA Logo is not displayed on login page");
-			extentTest.info("ToolsQA Logo is not displayed on login page");
+		//	extentTest.info("ToolsQA Logo is not displayed on login page");
+			extentTest.info("Orange HRM Logo is not displayed on login page");
+			Assert.assertTrue(false);
 		}
 
 	}
@@ -64,14 +70,15 @@ public class LoginTest_001 extends Test_Base {
 
 	@Test(priority = 4)
 	public void loginTest() {
-		extentTest = extentReports.createTest("loginTest");
+		extentTest = extentReports.createTest("loginTest_01");
 		
 		lp = new Loginpage(driver);
 		lp.setUsername(configDataProvider.getUserName());
 		lp.setPassword(configDataProvider.getPassword());
 		lp.clickonLoginbutton();
 
-		if (driver.getPageSource().contains("viewport")) {
+		//toolqa if (driver.getPageSource().contains("viewport"))
+			if (driver.getPageSource().contains("Dashboard")){
 			Assert.assertTrue(true);
 			//System.out.println("Login Susses...");
 			extentTest.info("Login Susses...");

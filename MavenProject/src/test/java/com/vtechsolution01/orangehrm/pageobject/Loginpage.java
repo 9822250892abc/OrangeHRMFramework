@@ -23,24 +23,37 @@ public class Loginpage {
 
 	//
 
-	@FindBy(id = "userName")
+	//@FindBy(id = "userName")
+	//WebElement usernameTxt;
+	
+	@FindBy(xpath = "//input[@name='username' or @placeholder='Username']")
 	WebElement usernameTxt;
 
-	@FindBy(id = "password")
+	//@FindBy(id = "password")
+	//WebElement txtPassword;
+	
+	@FindBy(xpath = "//input[@name='password' or @placeholder='Password']")
 	WebElement txtPassword;
 
-	@FindBy(xpath = "//*[@id=\"login\"]")
-
+	//@FindBy(xpath = "//*[@id=\"login\"]")
+   // WebElement btnLogin;
+	
+	@FindBy(xpath = "//button[@type='submit' or text()='Login']")
 	WebElement btnLogin;
 
-	@FindBy(xpath = "//*[@id=\"app\"]/header/a/img")
+	//@FindBy(xpath = "//*[@id=\"app\"]/header/a/img")
 	// @FindBy(xpath = "//div[@id='divLogo']/img")
-	WebElement imgLogo;
+	//WebElement imgLogo;
 
-	public boolean verifyToolsQALogo() {
+	@FindBy(xpath = "//img[@src='/web/images/ohrm_branding.png?1660914792648']")
+	WebElement imgLogo;
+	//public boolean verifyToolsQALogo()
+	public boolean verifyOrangeHHrmLogo()
+	{
 		try {
 			return imgLogo.isDisplayed();
 		} catch (Exception e) {
+	       System.out.println(e.getMessage());
 			return false;
 		}
 	}
@@ -63,7 +76,7 @@ public class Loginpage {
 			txtPassword.sendKeys(password);
 
 		} catch (Exception e) {
-			e.getMessage();
+			System.out.println(e.getMessage());
 		}
 	}
 
