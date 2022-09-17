@@ -1,10 +1,7 @@
 package com.vtechsolution01.orangehrm.utility;
 
-import java.io.File;
 import java.io.FileInputStream;
 
-
-//import java.io.FileInputStream;
 
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
@@ -77,14 +74,5 @@ public class ExcelDataProvider {
 		
 		return data;
 	}
-	
-//	public static void main(String[] args) {
-//		 ExcelDataProvider excelData = new ExcelDataProvider("./Data/TestData.xlsx");
-//		 
-//		Object[][] data1 = excelData.getExcelData("Login1");
-//		
-//		System.out.println(data1);
-//	}
-	
 	
 }

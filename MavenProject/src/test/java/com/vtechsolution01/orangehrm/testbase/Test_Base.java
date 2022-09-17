@@ -1,7 +1,5 @@
 package com.vtechsolution01.orangehrm.testbase;
 
-import java.time.Duration;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -21,7 +19,7 @@ import com.vtechsolution01.orangehrm.utility.ConfigDataProvider;
 import com.vtechsolution01.orangehrm.utility.ConstantVarriable;
 import com.vtechsolution01.orangehrm.utility.ExcelDataProvider;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+//simport io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Test_Base {
 
@@ -69,14 +67,13 @@ public class Test_Base {
 //			driver = new FirefoxDriver();
 //		}
 
-	//@BeforeTest
-	@BeforeMethod
+	@BeforeTest
 	@Parameters("{brname}")
 	public void setUp(@Optional("Chrome") String brwoser) {
 
 		if (brwoser.equals("Chrome")) {
 			System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver.exe");
-			WebDriverManager.chromedriver().setup();
+			
 			driver = new ChromeDriver();
 		}
 
@@ -91,21 +88,18 @@ public class Test_Base {
 		}
 		driver.manage().window().maximize();
 		driver.get(configDataProvider.getAppUrl());
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		//driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
+		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 
-	@AfterMethod
-	public void TearDown() throws InterruptedException {
+	@AfterTest
+	public void TearDown() throws Exception {
 
-		try {
 			Thread.sleep(5000);
 			driver.quit();
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		
 		}
-	}
+	
 
 	@AfterTest
 	public void ExtendFlush() {

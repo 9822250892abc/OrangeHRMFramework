@@ -7,7 +7,7 @@ public class ConfigDataProvider {
 
 	public static Properties prop;
 
-	public ConfigDataProvider(String ConfigPath) {
+	public ConfigDataProvider(String ConfigPath)  {
 
 		try {
 			FileInputStream fins = new FileInputStream(ConfigPath);
