@@ -96,7 +96,7 @@ public class Test_Base {
 	public void TearDown() throws Exception {
 
 			Thread.sleep(5000);
-			driver.quit();
+		//	driver.quit();
 		
 		}
 	
