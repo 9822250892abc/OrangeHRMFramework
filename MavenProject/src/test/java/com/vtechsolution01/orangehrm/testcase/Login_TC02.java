@@ -14,12 +14,13 @@ public class Login_TC02 extends Test_Base {
 	@Test
 	public void loginTest() {
 		
+		extentTest=extentReports.createTest("loginTest");
 		lp = new Loginpage(driver);
 		lp.setUsername(ExcelDataProvider.getStringCellData(0, 1, 0));
 		lp.setPassword(ExcelDataProvider.getStringCellData(0, 1, 1));
 		lp.clickonLoginbutton();
 
-		if (driver.getPageSource().contains("viewport"))
+		if (driver.getCurrentUrl().contains("profile"))
 			
 			{
 			Assert.assertTrue(true);

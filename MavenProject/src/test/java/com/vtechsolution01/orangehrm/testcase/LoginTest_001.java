@@ -5,19 +5,22 @@ import org.testng.annotations.Test;
 
 import com.vtechsolution01.orangehrm.pageobject.Loginpage;
 import com.vtechsolution01.orangehrm.testbase.Test_Base;
+import com.vtechsolution01.orangehrm.utility.Helper;
 
 public class LoginTest_001 extends Test_Base {
 
 	Loginpage lp;
 
-	@Test(priority = 1)
+	@Test(priority = 2)
 	public void verifyLoginPageTC() {
 		extentTest = extentReports.createTest("verifyLoginPageTC");
+		lp = new Loginpage(driver);
 		if (driver.getTitle().equals("ToolsQA"))
 
 		{
 
 			Assert.assertTrue(true);
+			Helper.captureScreenshot(driver);
 
 			extentTest.info("Login Tital Is Displyaed");
 		}
@@ -29,7 +32,7 @@ public class LoginTest_001 extends Test_Base {
 		}
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 1)
 	public void verifyToolsQALogoTC() {
 		extentTest = extentReports.createTest("verifyToolsQALogoTC");
 
@@ -39,6 +42,8 @@ public class LoginTest_001 extends Test_Base {
 
 		{
 			Assert.assertTrue(true);
+			Helper.captureScreenshot(driver);
+			
 			System.out.println("ToolsQA Logo is displayed on login page");
 			extentTest.info("ToolsQA Logo is displayed on login page");
 
@@ -80,6 +85,7 @@ public class LoginTest_001 extends Test_Base {
 
 		{
 			Assert.assertTrue(true);
+			Helper.captureScreenshot(driver);
 			System.out.println("Login Susses...");
 
 		} else {

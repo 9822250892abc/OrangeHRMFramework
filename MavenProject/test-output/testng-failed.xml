@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.vtechsolution01.orangehrm.testcase.Profile_TC04">
+      <class name="com.vtechsolution01.orangehrm.testcase.Login_TC02">
         <methods>
           <include name="ExtendFlush"/>
+          <include name="loginTest"/>
           <include name="init"/>
           <include name="TearDown"/>
           <include name="setUp"/>
-          <include name="Profile_BookList"/>
         </methods>
-      </class> <!-- com.vtechsolution01.orangehrm.testcase.Profile_TC04 -->
+      </class> <!-- com.vtechsolution01.orangehrm.testcase.Login_TC02 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
