@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-27T19:09:17 IST" name="Default suite" finished-at="2022-09-27T19:09:50 IST" duration-ms="32328">
+  <suite started-at="2022-10-20T15:59:16 IST" name="Default suite" finished-at="2022-10-20T15:59:32 IST" duration-ms="15883">
     <groups>
     </groups>
-    <test started-at="2022-09-27T19:09:17 IST" name="Default test" finished-at="2022-09-27T19:09:50 IST" duration-ms="32328">
-      <class name="com.vtechsolution01.orangehrm.testcase.Login_TC02">
-        <test-method is-config="true" signature="init()[pri:0, instance:com.vtechsolution01.orangehrm.testcase.Login_TC02@671a5887]" started-at="2022-09-27T19:09:15 IST" name="init" finished-at="2022-09-27T19:09:17 IST" duration-ms="2148" status="PASS">
+    <test started-at="2022-10-20T15:59:16 IST" name="Default test" finished-at="2022-10-20T15:59:32 IST" duration-ms="15883">
+      <class name="com.vtechsolution01.orangehrm.testcase.Profile_TC04">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.vtechsolution01.orangehrm.testcase.Profile_TC04@609db43b]" started-at="2022-10-20T15:59:14 IST" name="init" finished-at="2022-10-20T15:59:16 IST" duration-ms="1982" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.vtechsolution01.orangehrm.testcase.Login_TC02@671a5887]" started-at="2022-09-27T19:09:17 IST" name="setUp" finished-at="2022-09-27T19:09:47 IST" duration-ms="29930" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.vtechsolution01.orangehrm.testcase.Profile_TC04@609db43b]" started-at="2022-10-20T15:59:16 IST" name="setUp" finished-at="2022-10-20T15:59:24 IST" duration-ms="8147" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,18 +22,71 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTest()[pri:0, instance:com.vtechsolution01.orangehrm.testcase.Login_TC02@671a5887]" started-at="2022-09-27T19:09:47 IST" name="loginTest" finished-at="2022-09-27T19:09:48 IST" duration-ms="567" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="verifyLoginPageTC()[pri:1, instance:com.vtechsolution01.orangehrm.testcase.Profile_TC04@609db43b]" started-at="2022-10-20T15:59:25 IST" name="verifyLoginPageTC" finished-at="2022-10-20T15:59:25 IST" duration-ms="97" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPageTC -->
+        <test-method is-config="true" signature="TearDown(org.testng.ITestResult)[pri:0, instance:com.vtechsolution01.orangehrm.testcase.Profile_TC04@609db43b]" started-at="2022-10-20T15:59:25 IST" name="TearDown" finished-at="2022-10-20T15:59:25 IST" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginPageTC status=SUCCESS method=Profile_TC04.verifyLoginPageTC()[pri:1, instance:com.vtechsolution01.orangehrm.testcase.Profile_TC04@609db43b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method signature="verifyToolsQALogoTC()[pri:2, instance:com.vtechsolution01.orangehrm.testcase.Profile_TC04@609db43b]" started-at="2022-10-20T15:59:25 IST" name="verifyToolsQALogoTC" finished-at="2022-10-20T15:59:25 IST" duration-ms="145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyToolsQALogoTC -->
+        <test-method is-config="true" signature="TearDown(org.testng.ITestResult)[pri:0, instance:com.vtechsolution01.orangehrm.testcase.Profile_TC04@609db43b]" started-at="2022-10-20T15:59:25 IST" name="TearDown" finished-at="2022-10-20T15:59:25 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyToolsQALogoTC status=SUCCESS method=Profile_TC04.verifyToolsQALogoTC()[pri:2, instance:com.vtechsolution01.orangehrm.testcase.Profile_TC04@609db43b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method signature="loginTest()[pri:4, instance:com.vtechsolution01.orangehrm.testcase.Profile_TC04@609db43b]" started-at="2022-10-20T15:59:25 IST" name="loginTest" finished-at="2022-10-20T15:59:25 IST" duration-ms="571" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="TearDown(org.testng.ITestResult)[pri:0, instance:com.vtechsolution01.orangehrm.testcase.Profile_TC04@609db43b]" started-at="2022-10-20T15:59:25 IST" name="TearDown" finished-at="2022-10-20T15:59:25 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginTest status=SUCCESS method=Profile_TC04.loginTest()[pri:4, instance:com.vtechsolution01.orangehrm.testcase.Profile_TC04@609db43b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method signature="Profile_BookList()[pri:5, instance:com.vtechsolution01.orangehrm.testcase.Profile_TC04@609db43b]" started-at="2022-10-20T15:59:25 IST" name="Profile_BookList" finished-at="2022-10-20T15:59:30 IST" duration-ms="4899" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[did not expect to find [true] but found [false]]]>
+              <![CDATA[Expected condition failed: waiting for alert to be present (tried for 2 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-JOCDJ6C', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:10801}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e00d1d437eba8e12a3d8461a8abc318f]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: did not expect to find [true] but found [false]
-at org.testng.Assert.fail(Assert.java:97)
-at org.testng.Assert.failNotEquals(Assert.java:969)
-at org.testng.Assert.assertTrue(Assert.java:43)
-at org.testng.Assert.assertTrue(Assert.java:53)
-at com.vtechsolution01.orangehrm.testcase.Login_TC02.loginTest(Login_TC02.java:29)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for alert to be present (tried for 2 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-JOCDJ6C', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:10801}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e00d1d437eba8e12a3d8461a8abc318f
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at com.vtechsolution01.orangehrm.testcase.Profile_TC04.Profile_BookList(Profile_TC04.java:150)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -64,26 +117,26 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="TearDown(org.testng.ITestResult)[pri:0, instance:com.vtechsolution01.orangehrm.testcase.Login_TC02@671a5887]" started-at="2022-09-27T19:09:48 IST" name="TearDown" finished-at="2022-09-27T19:09:49 IST" duration-ms="1337" status="PASS">
+        </test-method> <!-- Profile_BookList -->
+        <test-method is-config="true" signature="TearDown(org.testng.ITestResult)[pri:0, instance:com.vtechsolution01.orangehrm.testcase.Profile_TC04@609db43b]" started-at="2022-10-20T15:59:30 IST" name="TearDown" finished-at="2022-10-20T15:59:32 IST" duration-ms="1286" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginTest status=FAILURE method=Login_TC02.loginTest()[pri:0, instance:com.vtechsolution01.orangehrm.testcase.Login_TC02@671a5887] output={null}]]]>
+                <![CDATA[[TestResult name=Profile_BookList status=FAILURE method=Profile_TC04.Profile_BookList()[pri:5, instance:com.vtechsolution01.orangehrm.testcase.Profile_TC04@609db43b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-        <test-method is-config="true" signature="ExtendFlush()[pri:0, instance:com.vtechsolution01.orangehrm.testcase.Login_TC02@671a5887]" started-at="2022-09-27T19:09:49 IST" name="ExtendFlush" finished-at="2022-09-27T19:09:50 IST" duration-ms="434" status="PASS">
+        <test-method is-config="true" signature="ExtendFlush()[pri:0, instance:com.vtechsolution01.orangehrm.testcase.Profile_TC04@609db43b]" started-at="2022-10-20T15:59:32 IST" name="ExtendFlush" finished-at="2022-10-20T15:59:32 IST" duration-ms="648" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExtendFlush -->
-      </class> <!-- com.vtechsolution01.orangehrm.testcase.Login_TC02 -->
+      </class> <!-- com.vtechsolution01.orangehrm.testcase.Profile_TC04 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
